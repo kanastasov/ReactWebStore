@@ -473,7 +473,7 @@
     width: 100%;
     border: 0;
   }
-  .list-of-fish {
+  .list-of-item {
     border-top: 2px solid #000;
     border-bottom: 1px solid #000;
     padding-top: 5px;
@@ -531,8 +531,8 @@
     color: #d12028;
     background: #fff;
     border-color: #d12028;
-    -webkit-transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
-            transform: rotate(-10deg) scale(2) translateX(50%) translateY(-50%);
+    -webkit-transform: rotate(-20deg) scale(2) translateX(20%) translateY(-20%);
+            transform: rotate(-20deg) scale(2) translateX(20%) translateY(-20%);
   }
   button[disabled]:hover,
   input[type=submit][disabled]:hover {
