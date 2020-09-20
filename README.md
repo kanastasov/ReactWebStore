@@ -2,10 +2,10 @@
 
 ### This is real-time app for a trendy HealthStoreFoods market where price and quantity available are variable and can change at a moment's notice. There is a menu, an order form, and an inventory management area where authorized users can immediately update product details.
 
-### Check it life on netlify: 
+### Check it life on netlify!!!
 https://healthstoreshop.netlify.app/store/HealthStoreSupplements-Varna
 
-### HelthStoreSupplements-Varna only have data
+### HelthStoreSupplements-Varna only have data!
 https://healthstoreshop.netlify.app/
 
 ### View from Customer prespective:
