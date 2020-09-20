@@ -271,7 +271,7 @@
     display: -webkit-box;
     display: flex;
     font-size: 3rem;
-    color: #f5a623;
+    color: rgb(255, 255, 255);
     -webkit-box-pack: center;
             justify-content: center;
     -webkit-box-align: center;
@@ -288,7 +288,7 @@
   header.top h3 {
     margin: 0;
     font-size: 2rem;
-    color: #f5a623;
+    color: #4a23f5;
     position: relative;
     display: inline-block;
   }

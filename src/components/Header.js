@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const Header = (props) => (
         <header className="top">
-        <h1>Fruit 
+        <h1>Health 
           <span className="ofThe">
-              <span className="of">of</span>
-              <span className="the">the</span>
+              <span className="of">H</span>
+              <span className="the">S</span>
               </span>  
-             Day</h1>
+             Store</h1>
 
         <h3 className="tagline">
     <span>{props.tagline}</span>
