@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
@@ -10,6 +11,10 @@ class App extends React.Component {
     state = {
         items: {},
         order: {}
+    };
+
+    static propTypes = {
+        match: PropTypes.object
     };
 
     componentDidMount() {
@@ -57,7 +62,6 @@ class App extends React.Component {
         items[key] = null;
         this.setState({items});
     };
-
 
     loadSampleItems = () => {
         this.setState({items: sampleItems});
