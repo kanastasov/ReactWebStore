@@ -14,6 +14,9 @@ class Order extends React.Component{
         return (<li key={key}>
             {count} kgs {item.name}
             {formatPrice(count * item.price)}
+            <button onClick={() => this.props.deleteOrder(key)}>
+              &times;
+            </button>
             </li>);
     };
     render() {
@@ -39,6 +42,7 @@ class Order extends React.Component{
               <div className="total">
               <strong>{formatPrice(total) }</strong>
               </div>
+            
           </div>
         )
     }
