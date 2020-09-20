@@ -44,6 +44,21 @@ class App extends React.Component {
         console.log("Adding Item");
     };
 
+
+    updateItem = (key, updateItem) => {
+        const items = {...this.state.items};
+        items[key] = updateItem;
+        this.setState({items});
+    };
+
+
+    deleteItem = key => {
+        const items = {...this.state.items};
+        items[key] = null;
+        this.setState({items});
+    };
+
+
     loadSampleItems = () => {
         this.setState({items: sampleItems});
     }
@@ -56,7 +71,13 @@ class App extends React.Component {
         this.setState({
             order : order
         });
-    }
+    };
+
+    deleteOrder = key => {
+        const order = {...this.state.order};
+        delete order[key];
+        this.setState({order});
+    };
 
     render() {
         return (
@@ -71,8 +92,18 @@ class App extends React.Component {
                         details={this.state.items[key]} addToOrder={this.addToOrder}/>)}
                     </ul>
                 </div>        
-                <Order items={this.state.items} order={this.state.order} />
-                <Inventory addItem={this.addItem} loadSampleItems={this.loadSampleItems} />
+                <Order 
+                items={this.state.items} 
+                order={this.state.order} 
+                deleteOrder={this.deleteOrder}
+                />
+                <Inventory 
+                addItem={this.addItem} 
+                updateItem={this.updateItem}
+                deleteItem={this.deleteItem}
+                loadSampleItems={this.loadSampleItems} 
+                items={this.state.items}
+                />
                 
             </div>
         )
