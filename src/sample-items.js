@@ -4,8 +4,8 @@ const items = {
       name: "Strawbery",
       image: "/images/strawbery.jpg",
       desc:
-        "Everyone’s favorite white fish. We will cut it to the size you need and ship it.",
-      price: 1724,
+        "The tiny strawberry is packed with vitamin C, fiber, antioxidants, and more. The heart-shaped silhouette of the strawberry is the first clue that this fruit is good for you.",
+      price: 524,
       status: "available"
     },
   
@@ -13,8 +13,8 @@ const items = {
       name: "Bluebery",
       image: "/images/bluebery.jpg",
       desc:
-        "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
-      price: 3200,
+        "The fiber, potassium, folate, vitamin C, vitamin B6, and phytonutrient content in blueberries supports heart health. The absence of cholesterol from blueberries is also beneficial to the heart.",
+      price: 620,
       status: "available"
     },
   
@@ -22,8 +22,8 @@ const items = {
       name: "Apple",
       image: "/images/apple.jpg",
       desc:
-        "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
-      price: 1684,
+        " Apples promote heart health in several ways. They're high in soluble fiber, which helps lower cholesterol. They also have polyphenols, which are linked to lower blood pressure and stroke risk.",
+      price: 284,
       status: "unavailable"
     },
   
@@ -31,8 +31,8 @@ const items = {
       name: "Banana",
       image: "/images/banana.jpg",
       desc:
-        "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
-      price: 1129,
+        "Potassium in bananas is good for your heart health and blood pressure. A medium-sized banana will provide around 320-400 mg of potassium, which meets about 10% of your daily potassium needs. ",
+      price: 229,
       status: "available"
     },
   
@@ -40,8 +40,8 @@ const items = {
       name: "Kiwi",
       image: "/images/kiwi.jpg",
       desc:
-        "Crack these open and enjoy them plain or with one of our cocktail sauces",
-      price: 4234,
+        "It's also full of nutrients like vitamin C, vitamin K, vitamin E, folate, and potassium. They also have a lot of antioxidants and are a good source of fiber.",
+      price: 434,
       status: "available"
     },
   
@@ -49,16 +49,16 @@ const items = {
       name: "Lemon",
       image: "/images/lemon.jpg",
       desc:
-        "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
-      price: 1453,
+        "Lemons contain a high amount of vitamin C, soluble fiber, and plant compounds that give them a number of health benefits!",
+      price: 353,
       status: "available"
     },
   
     item7: {
       name: "Mango",
       image: "/images/mango.jpg",
-      desc: "A soft plump oyster with a sweet salty flavor and a clean finish.",
-      price: 2543,
+      desc: "Mangoes contain high level of vitamin C, fibre and pectin making it a perfect fruit that helps in controlling high cholesterol level.",
+      price: 253,
       status: "available"
     },
   
@@ -66,7 +66,7 @@ const items = {
       name: "Orange",
       image: "/images/orange.jpg",
       desc:
-        "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
+        "Oranges are a good source of several vitamins and minerals, especially vitamin C, thiamine, folate, and potassium. Vitamin C. Oranges are an excellent source of vitamin C.",
       price: 425,
       status: "available"
     },
@@ -75,16 +75,16 @@ const items = {
       name: "Pineapple",
       image: "/images/pineapple.jpg",
       desc:
-        "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
-      price: 2250,
+        "Pineapples are tropical fruits that are rich in vitamins, enzymes and antioxidants. They may help boost the immune system, build strong bones and aid indigestion.",
+      price: 250,
       status: "available"
     },
     item10: {
         name: "Watermelon",
         image: "/images/watermelon.jpg",
         desc:
-          "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
-        price: 3250,
+          "Watermelon also contains citrulline, an amino acid that may increase nitric oxide levels in the body.",
+        price: 350,
         status: "available"
       }
   };

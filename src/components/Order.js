@@ -1,23 +1,57 @@
 import React from 'react';
 import { formatPrice } from '../helpers';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import PropTypes from 'prop-types';
 
 class Order extends React.Component{
+    static propType = {
+        items: PropTypes.object,
+        order: PropTypes.object,
+        deleteOrder: PropTypes.func
+    };
     renderOrder = key => {
         const item = this.props.items[key];
         const count = this.props.order[key];
         const isAvailable = item && item.status === 'available';
+        const transitionOptions = {
+            classNames:"order",
+            key,
+            timeout: {enter:500,exit:500}
+        };
         if(!item) return null;
-        
+         
         if(!isAvailable){
-            return <li key={key}>Sorry {item ? item.name : 'item'} is no longer available </li>
+            return( 
+                <CSSTransition{...transitionOptions}
+                 >   
+            
+            <li key={key}>
+                Sorry {item ? item.name : 'item'}
+                 is no longer available </li>
+                 </CSSTransition>
+            );
         }
-        return (<li key={key}>
-            {count} kgs {item.name}
+        return (
+        <CSSTransition 
+        {...transitionOptions}>      
+            <li key={key}>
+            <span>
+                <TransitionGroup component="span" className="count">
+                    <CSSTransition classNames="count" key={count} timeout={{enter:250,exit:250}}>
+                     <span>{count}</span> 
+                    </CSSTransition>
+                </TransitionGroup>
+              
+            
+            kgs {item.name}
             {formatPrice(count * item.price)}
             <button onClick={() => this.props.deleteOrder(key)}>
               &times;
             </button>
-            </li>);
+            </span>
+            </li>
+            </CSSTransition>
+            );
     };
     render() {
         const orderIds = Object.keys(this.props.order);
@@ -35,12 +69,13 @@ class Order extends React.Component{
               <h2>
                   Order  
               </h2> 
-              <ul className="order">
+              <TransitionGroup component = "ul"className="order">
                  {orderIds.map(this.renderOrder)}
-              </ul>
+              </TransitionGroup>
         
               <div className="total">
-              <strong>{formatPrice(total) }</strong>
+                  Total
+                <strong>{formatPrice(total) }</strong>
               </div>
             
           </div>
