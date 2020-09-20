@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### Building real time application and dynamic website components with React.
 
 ### This is real-time app for a trendy HealthStoreFoods market where price and quantity available are variable and can change at a moment's notice. There is a menu, an order form, and an inventory management area where authorized users can immediately update product details.
@@ -15,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![navigate to specipic shop](https://user-images.githubusercontent.com/755058/93711731-4cf4e380-fb59-11ea-8688-f107897e20c6.png)
 
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
@@ -83,3 +82,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Check: https://reactforbeginners.com/
