@@ -107,8 +107,9 @@ class App extends React.Component {
                 deleteItem={this.deleteItem}
                 loadSampleItems={this.loadSampleItems} 
                 items={this.state.items}
+                storeId={this.props.match.params.storeId}
                 />
-                
+                 
             </div>
         )
     }

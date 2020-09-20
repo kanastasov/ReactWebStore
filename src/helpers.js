@@ -1,7 +1,7 @@
 export function formatPrice(cents) {
     return (cents / 100).toLocaleString("en-US", {
       style: "currency",
-      currency: "USD"
+      currency: "BGN"
     });
   }
   
@@ -22,19 +22,17 @@ export function formatPrice(cents) {
   
   export function getFunName() {
     const adjectives = [
-      "adorable",
-      "beautiful",
-      "clean",
-      "drab"    
+      "HealthStoreFoods",
+      "HealthStoreSupplements"   
     ];
   
     const nouns = [
-      "banana",
-      "apple",
-      "mango",
-      "kifi",
+      "Sofia Bussness Park",
+      "Sofia Cerdika",
+      "Plovdiv",
+      "Varna",
     ];
   
-    return `${rando(adjectives)}-${rando(adjectives)}-${rando(nouns)}`;
+    return `${rando(adjectives)}-${rando(nouns)}`;
   }
   

@@ -19,7 +19,7 @@ class Order extends React.Component{
             timeout: {enter:500,exit:500}
         };
         if(!item) return null;
-        
+         
         if(!isAvailable){
             return( 
                 <CSSTransition{...transitionOptions}
