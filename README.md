@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Building real time application and dynamic website components with React.
+### Building real time application and dynamic website components with React.
 
 This is real-time app for a trendy HealthStoreFoods market where price and quantity available are variable and can change at a moment's notice. There is a menu, an order form, and an inventory management area where authorized users can immediately update product details.
 
@@ -13,8 +13,6 @@ View from Owner of the shop prespective:
 Navigate to specific shop:
 ![navigate to specipic shop](https://user-images.githubusercontent.com/755058/93711731-4cf4e380-fb59-11ea-8688-f107897e20c6.png)
 
-
-Check https://reactforbeginners.com/
 
 ## Available Scripts
 
@@ -72,6 +70,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/an
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
 ### Advanced Configuration
+
+Check https://reactforbeginners.com/
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
