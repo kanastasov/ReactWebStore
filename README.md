@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+View from Customer prespective:
+![customer](https://user-images.githubusercontent.com/755058/93711718-351d5f80-fb59-11ea-988e-5af414f69ce9.png)
+
+View from Owner of the shop prespective:
+![Owner](https://user-images.githubusercontent.com/755058/93711739-6007b380-fb59-11ea-8b37-67e354926811.png)
+
+Navigate to specific shop:
+![navigate to specipic shop](https://user-images.githubusercontent.com/755058/93711731-4cf4e380-fb59-11ea-8688-f107897e20c6.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
