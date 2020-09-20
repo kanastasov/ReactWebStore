@@ -5,8 +5,10 @@ class Order extends React.Component{
     renderOrder = key => {
         const item = this.props.items[key];
         const count = this.props.order[key];
-        const isAvailable = this.status === 'available';
-        if(isAvailable){
+        const isAvailable = item && item.status === 'available';
+        if(!item) return null;
+        
+        if(!isAvailable){
             return <li key={key}>Sorry {item ? item.name : 'item'} is no longer available </li>
         }
         return (<li key={key}>
@@ -33,7 +35,7 @@ class Order extends React.Component{
               <ul className="order">
                  {orderIds.map(this.renderOrder)}
               </ul>
-              {orderIds}
+        
               <div className="total">
               <strong>{formatPrice(total) }</strong>
               </div>

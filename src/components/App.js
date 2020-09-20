@@ -4,6 +4,7 @@ import Order from './Order';
 import Inventory from './Inventory';
 import sampleItems from '../sample-items';
 import Item from '../components/Item';
+import base from '../base';
 
 class App extends React.Component {
     state = {
@@ -11,9 +12,29 @@ class App extends React.Component {
         order: {}
     };
 
+    componentDidMount() {
+        const { params } = this.props.match;
+        const localStorageRef = localStorage.getItem(params.storeId);
+        if(localStorageRef) {
+            this.setState({order: JSON.parse(localStorageRef)})
+        }
+        this.ref=base.syncState(`${params.storeId}/items`,
+        {context: this,
+        state: "items"
+        });
+     }
+
+     componentWillUnmount() {
+         base.removeBinding(this.ref);
+     }
+
+     componentDidUpdate() {
+         localStorage.setItem(this.props.match.params.storeId, JSON.stringify(this.state.order));
+     }
+
     addItem = (item) => {
         // 1 take a copy of the existing state
-        const items = {... this.state.items};
+        const items={...this.state.items};
         items[`item${Date.now()}`] = item;
 
         this.setState({
@@ -29,7 +50,7 @@ class App extends React.Component {
 
     addToOrder = (key) => {
                //take copy of state
-        const order = {... this.state.order};
+        const order={...this.state.order};
         //add the order or update number in order
         order[key] = order[key] + 1 || 1;
         this.setState({
